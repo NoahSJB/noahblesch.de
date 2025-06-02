@@ -456,7 +456,7 @@
                 <a href="https://calendly.com/noahblesch" class="footer-link" target="_blank">Calendly</a>
             </div>
             <div class="copyright">
-                <p>&copy; 2024 Noah Blesch. Alle Rechte vorbehalten.</p>
+                <p>&copy; 2025 Noah Blesch. Alle Rechte vorbehalten.</p>
             </div>
         </footer>
     </div>
@@ -467,7 +467,6 @@
             const content = accordionItems[index].querySelector('.accordion-content');
             const chevron = accordionItems[index].querySelector('.chevron');
             
-            // Close all other accordions
             accordionItems.forEach((item, i) => {
                 if (i !== index) {
                     item.querySelector('.accordion-content').classList.remove('active');
@@ -475,7 +474,6 @@
                 }
             });
             
-            // Toggle current accordion
             content.classList.toggle('active');
             chevron.classList.toggle('rotated');
         }
